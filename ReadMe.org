@@ -1,0 +1,15 @@
+* octo
+  Demo project for Summer Inters(iitb)
+
+** Usage
+   - Create database
+     #+BEGIN_SRC sh
+       cd octo
+       python manage.py syncdb   
+     #+END_SRC sh
+
+   - Run using 
+     #+BEGIN_SRC sh
+       python manage.py runserver  
+     #+END_SRC sh
+
