@@ -1,0 +1,5 @@
+<form role="form" id="register" method="post">
+  {% csrf_token %}
+  {{postform.as_p}}
+  <input type="submit" name="submit" value="submit" />
+</form>
