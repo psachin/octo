@@ -1,6 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render_to_response, get_object_or_404
 from django.template import RequestContext
+from django.utils.translation import ugettext as _
 
 from app.models import Blog
 
@@ -8,7 +9,8 @@ from app.forms import PostForm
 
 
 def hello(request):
-    return HttpResponse("<h1>hello</h1>")
+    output = _("Hello")
+    return HttpResponse(output)
 
 
 def say_hi(request):
