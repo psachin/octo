@@ -1,4 +1,9 @@
+{% if blogs %}
 {% for blog in blogs %}
 <h2>{{blog.title}}</h2>
 <p>{{blog.body}}</p>
 {% endfor %}
+{% else %}
+<p>There is nothing in the database!</p>
+<p><a href="/app/blog/submit/">Post new blog</a></p>
+{% endif %}
