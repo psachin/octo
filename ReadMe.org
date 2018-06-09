@@ -13,3 +13,5 @@
        python manage.py runserver  
      #+END_SRC sh
 
+** License
+   - GNU GPL v3
