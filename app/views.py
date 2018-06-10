@@ -16,6 +16,9 @@ def hello(request):
 def say_hi(request):
     return render_to_response("say_hi.html")
 
+def a_unit(request):
+    return HttpResponse("test")
+
 
 def blog(request):
     context = RequestContext(request)
